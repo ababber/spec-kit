@@ -25,6 +25,10 @@ ababber/shadow-spec-kit/install-publishable-hooks.sh
 
 Commits that stage forbidden paths or phrases are **blocked** unless `SKIPPUBLISHABLEGUARD=1` (emergency only).
 
+## Server-side guard
+
+GitHub Actions workflow at `.github/workflows/publishable-guard.yml` provides server-side enforcement. Pushes and PRs with internal vocabulary will fail CI.
+
 ## Upstream sync
 
 ```bash
